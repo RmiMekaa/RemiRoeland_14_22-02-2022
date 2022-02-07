@@ -1,0 +1,25 @@
+.customSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  & select {
+    font-size: 1.2rem;
+    background-color: $darkBlueGrey;
+    border-radius: $smallRadius;
+    border: inherit;
+    border: $translucentBorder;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.1rem;
+    margin-bottom: 1.5rem;
+    color: $sand;
+    &:focus {
+      outline-color: $sand;
+      outline-width: 1px;
+      outline-style: solid;  
+    }
+  }
+  & option:first-child {
+    font-style: italic;
+  }
+}

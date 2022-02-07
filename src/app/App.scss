@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $test;
+  margin: auto;
+  color: $sand;
+  background-image: url('../assets/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+html {
+    zoom: 0.8;
+}
+
+html, body {
+    height: 100%;
+}

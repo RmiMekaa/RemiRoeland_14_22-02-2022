@@ -1,0 +1,38 @@
+.navItem {
+  width: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $darkBlueGrey;
+  &__icon {
+    height: 83px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    &__home {
+      background-image: url('../../assets/Create-employee-icon-sand.png');
+    }
+    &__employees {
+      background-image: url('../../assets/Employees-icon-sand.png');
+    }    
+  }
+}
+
+.navItem:first-child {
+  border-bottom-left-radius: $largeRadius;
+}
+.navItem:last-child {
+  border-bottom-right-radius: $largeRadius;
+}
+
+
+.navItem.active {
+  background: $sand;
+  & .navItem__icon__home {
+    background-image: url('../../assets/Create-employee-icon.png');
+  }
+  & .navItem__icon__employees {
+    background-image: url('../../assets/Employees-icon.png');
+  }
+}

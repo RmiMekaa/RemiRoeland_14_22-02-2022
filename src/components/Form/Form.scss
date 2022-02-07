@@ -1,0 +1,96 @@
+.form {
+  width: 50%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 47% 6% 47%;
+  grid-template-areas: 
+  "a . b"
+  "c . d"
+  "e e e"
+  "f f f"
+  "g g g";
+  color: $sand;
+  background-color: $darkBlueGrey;
+  border: $translucentBorder;
+  border-radius: $mediumRadius;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
+  &__submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__button {
+      border: $sand solid 3px;
+      margin-top: 1rem;
+      justify-self: center;
+      width: 33%;
+      padding: 1rem 3rem;
+      background-color: transparent;
+      border-radius: $mediumRadius;
+      color: $sand;
+      font-size: 1rem;
+      font-weight: bold;
+      &:hover {
+        background-color: $sand;
+        color: $darkBlueGrey;
+        cursor: pointer;
+      }
+    }
+    &__errorMsg {
+      color: red;
+    }
+  }
+}
+
+.form > :nth-child(1) {
+  grid-area: a;
+}
+.form > :nth-child(2) {
+  grid-area: b;
+}
+.form > :nth-child(3) {
+  grid-area: c;
+}
+.form > :nth-child(4) {
+  grid-area: d;
+}
+.form > :nth-child(5) {
+  grid-area: e;
+}
+.form > :nth-child(6) {
+  grid-area: f;
+}
+.form > :nth-child(7) {
+  grid-area: g;
+}
+
+.address {
+  width: 100%;
+  padding: 2rem;
+  border-radius: $smallRadius;
+  border: $translucentBorder;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  & div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.successMsg {
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+  background-color: $darkBlueGrey;
+  border: $translucentBorder;
+  border-radius: $mediumRadius;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  &__closeBtn {
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.5rem;
+    top: -0.5rem;
+    right: 0;
+    padding: 1rem;
+  }
+}

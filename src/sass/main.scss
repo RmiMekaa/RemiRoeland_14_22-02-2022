@@ -1,0 +1,13 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+@import '../app/App.scss';
+@import '../components/Header/Header.scss';
+@import '../components/NavItem/NavItem.scss';
+@import '../components/Banner/Banner.scss';
+@import '../components//Form/Form.scss';
+@import '../components/CustomInput/CustomInput.scss';
+@import '../components/CustomSelect/CustomSelect.scss';
+@import '../components//Table/Table.scss';
+
+@import "~react-datepicker/dist/react-datepicker.css"

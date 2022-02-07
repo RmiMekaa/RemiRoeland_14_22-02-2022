@@ -1,0 +1,16 @@
+.header {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: $darkBlueGrey;
+  color: white;
+  box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+  &__nav {
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
+    display: flex;
+    height: 5rem;
+    border-bottom-left-radius: $largeRadius;
+    border-bottom-right-radius: $largeRadius;
+  }
+}
