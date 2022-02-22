@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from "../pages/HomePage";
+import CreateEmployeePage from "../pages/CreateEmployeePage";
 import EmployeesPage from "../pages/EmployeesPage";
 import Header from '../components/Header/Header';
 
@@ -8,9 +8,8 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/" element={<CreateEmployeePage />} />
         <Route path="/Employees" element={<EmployeesPage />} />
-        {/* <Route component={ErrorPage} /> */}
       </Routes>
     </Router>
   );
