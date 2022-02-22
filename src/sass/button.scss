@@ -1,0 +1,14 @@
+.customButton {
+  border: $sand solid 3px;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-radius: $smallRadius;
+  color: $sand;
+  font-size: 1rem;
+  font-weight: bold;
+  &:hover {
+    background-color: $sand;
+    color: $darkBlueGrey;
+    cursor: pointer;
+  }
+}

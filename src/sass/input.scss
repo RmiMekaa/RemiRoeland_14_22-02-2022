@@ -1,0 +1,15 @@
+.customInput {
+  height: 2.5rem;
+  background-color: $darkBlueGrey;
+  border: $translucentBorder;
+  border-radius: $smallRadius;
+  color: $sand;
+  height: 2rem;
+  outline: none;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  &:focus {
+    border-color: $sand;
+    border-width: 3px;
+  }
+}

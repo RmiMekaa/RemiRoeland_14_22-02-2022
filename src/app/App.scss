@@ -23,7 +23,7 @@ main {
   justify-content: center;
   max-width: 1440px;
   margin: auto;
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 html {
@@ -32,4 +32,10 @@ html {
 
 html, body {
     height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 6rem;
+  }
 }
