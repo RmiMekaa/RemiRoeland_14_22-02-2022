@@ -1,4 +1,4 @@
-.header {
+header {
   position: relative;
   height: 4rem;
   display: flex;
@@ -6,7 +6,7 @@
   background-color: $darkBlueGrey;
   color: white;
   box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
-  &__nav {
+  & nav {
     box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
     display: flex;
     height: 4rem;
@@ -15,9 +15,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  header {
     height: 3.5rem;
-    &__nav {
+    & nav {
       height: 5rem;
       width: auto;
       border-bottom-left-radius: $largeRadius;

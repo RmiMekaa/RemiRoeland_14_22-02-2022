@@ -8,8 +8,8 @@ import NavItem from "../NavItem/NavItem";
 export default function Header() {
 
   return (
-    <header className="header">
-      <nav className="header__nav">
+    <header>
+      <nav>
         <NavItem link="/" icon={"home"} />
         <NavItem link="/Employees" icon={"employees"} />
       </nav>
