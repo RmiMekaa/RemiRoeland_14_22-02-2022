@@ -1,0 +1,126 @@
+.mainContainer {
+  margin-top: 1rem;
+  font-family: inherit;
+  width: 100%;
+  color: $sand;
+  margin-bottom: 10rem;
+  user-select: none;
+}
+
+.tableHeader {
+  padding: 1rem;
+}
+
+@media all and (min-width: 426px) {
+  .mainContainer {
+    width: 100%;
+  }  
+}
+
+@media all and (min-width: 1024px) {
+  .tableHeader {
+    padding: 0rem;
+    margin-bottom: 1rem;
+  }
+  .mainContainer {
+    width: 100%;
+  }
+  .mainContainer table .table-td {
+    padding: 1rem;
+  }
+  .mainContainer table .table-th {
+    padding: 1rem;
+  }
+}
+
+/* TABLE */
+.table {
+  color: $sand;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.mainContainer .table-td {
+  background-color: $darkBlueGrey;
+  border: 3px solid $lightBlueGrey;
+  user-select: text;
+  padding: 0.5rem;
+}
+.mainContainer .table-th {
+  box-shadow:none;
+  background: transparent;
+  border-color: transparent;
+  color: $sand;
+  padding: 0.5rem;
+}
+.table-th-content {
+  gap: 1rem;
+}
+.table-td, .table-th{
+  padding: 1rem;
+}
+.table-tr {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.table-tr:hover .table-td {
+  background-color: darken($darkBlueGrey, 5%) ;
+}
+/* SELECT & INPUT */
+.mainContainer select {
+  background-color: transparent;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+.mainContainer option {
+  background-color: $darkBlueGrey;
+  padding: 0.2rem;
+}
+.mainContainer input {
+  background-color: transparent;
+}
+.search input {
+  font-size: 1rem;
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* PAGINATION */
+.pagination button {
+  background-color: $darkBlueGrey;
+  user-select: none;
+}
+.pagination .currentPage {
+  background-color: $sand;
+  color: $darkBlueGrey;
+}
+.pagination button[disabled] {
+  color: $lightBlueGrey;
+}
+.pagination button:hover {
+  border: 3px solid $sand;
+}
+
+/* SORT ICONS */
+.table-th-sortIcons button {
+  font-size: 0.6rem;
+}
+.table-th-sortIcons button.sortIcon--active {
+  color: $sand;
+  font-size: 0.6rem;
+}
+
+/* NO DATA MESSAGE */
+.noDataMsg {
+  border: 3px solid $lightBlueGrey;
+  background-color: $darkBlueGrey;
+}
+
+.tableFooter {
+  margin-top: 1rem;
+}
