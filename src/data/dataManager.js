@@ -1,4 +1,4 @@
-import { EMPLOYEES } from "./data"
+import { EMPLOYEES } from "../data/employees"
 
 /**
  * Add the employee to the database and save it in the local Storage
