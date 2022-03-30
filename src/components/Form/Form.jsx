@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormField from "../FormField/FormField";
-import { STATES, DEPARTMENTS } from "../../data/data";
+import { STATES } from "../../data/states";
+import { DEPARTMENTS } from "../../data/departments";
 import { addEmployee } from "../../data/dataManager";
 
 const initialState = {

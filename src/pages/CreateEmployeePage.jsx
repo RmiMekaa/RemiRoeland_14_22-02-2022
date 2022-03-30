@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import Banner from "../components/Banner/Banner";
 import Form from "../components/Form/Form";
 import CustomModal from "../components/CustomModal/CustomModal";
-
-//import ReactModal from "../../../../React-Modal/react-modal/src/lib/ReactModal"
 
 /**
  * React component for the home page
@@ -27,7 +24,7 @@ export default function CreateEmployeePage() {
 
   return (
     <main className="homepage">
-      <Banner text="Create employee" />
+      <h1>Create employee</h1>
       <Form toggleModal={toggleDisplayModal} />
       <CustomModal
         displayModal={displayModal}

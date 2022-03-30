@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import './CustomModal.scss';
 
@@ -39,4 +39,3 @@ export default function CustomModal(props) {
     onClose();
   }
 }
-
