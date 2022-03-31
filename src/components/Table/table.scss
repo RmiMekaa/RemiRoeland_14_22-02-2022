@@ -1,14 +1,14 @@
 .mainContainer {
-  margin-top: 2rem;
   font-family: inherit;
   width: 100%;
   color: $sand;
   margin-bottom: 10rem;
   user-select: none;
+  padding: 1rem;
 
   //TABLE HEADER
   .tableHeader {
-    padding: 1rem;
+    padding: 0 0 1rem 0;
 
     select {
       background-color: transparent;
@@ -25,6 +25,7 @@
     }
 
     .search input {
+      margin-top: 0.5rem;
       font-size: 1rem;
 
       &::-webkit-search-decoration {
@@ -76,22 +77,27 @@
   //TABLE FOOTER
   .tableFooter {
     margin-top: 1rem;
+    padding: 0;
+    gap: 1;
+    flex-wrap: wrap;
 
-    .pagination button {
-      background-color: $darkBlueGrey;
-      user-select: none;
+    .pagination {
+      button {
+        background-color: $darkBlueGrey;
+        user-select: none;
 
-      &.currentPage {
-        background-color: $sand;
-        color: $darkBlueGrey;
-      }
+        &.currentPage {
+          background-color: $sand;
+          color: $darkBlueGrey;
+        }
 
-      &[disabled] {
-        color: $lightBlueGrey;
-      }
+        &[disabled] {
+          color: $lightBlueGrey;
+        }
 
-      &:hover {
-        border: 3px solid $sand;
+        &:hover {
+          border: 3px solid $sand;
+        }
       }
     }
 
@@ -110,13 +116,15 @@
 
 @media all and (min-width: 426px) {
   .mainContainer {
-    width: 100%;
+    width: 90%;
+    padding: 0;
+    margin-top: 2rem;
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .mainContainer {
-    width: 100%;
+    margin-top: 3rem;
 
     .tableHeader {
       padding: 0rem;
