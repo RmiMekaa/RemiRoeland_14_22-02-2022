@@ -2,7 +2,7 @@ import React from "react";
 import NavItem from "../NavItem/NavItem";
 
 /**
- * React component for the header
+ * Component for the header
  * @component
  */
 export default function Header() {
@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <NavItem link="/" icon={"home"} />
-        <NavItem link="/Employees" icon={"employees"} />
+        <NavItem link="/" iconClassName={"navItem__icon__home"} />
+        <NavItem link="/Employees" iconClassName={"navItem__icon__employees"} />
       </nav>
     </header>
   )

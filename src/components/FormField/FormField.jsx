@@ -1,34 +1,19 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-FormField.propTypes = {
-  label: PropTypes.string,
-  id: PropTypes.string,
-  type: PropTypes.string,
-  value: PropTypes.string,
-  handleChange: PropTypes.func,
-  error: PropTypes.bool,
-  options: PropTypes.array,
-}
-
-FormField.defaultProps = {
-  options: [],
-};
-
 /**
  * React component for form fields with label + input
  * @param {Object} props 
- * @param {String} props.label  Label to display
- * @param {String} props.id     Element id
- * @param {String} props.type   Type of input
- * @param {String} props.value   Input value
- * @param {Function} props.handleChange  Handle change fonction
- * @param {Boolean} props.error   
- * @param {Array} props.options  
+ * @param {String} props.label Label to display
+ * @param {String} props.id Element id
+ * @param {String} props.type Type of input
+ * @param {String} props.value Input value
+ * @param {Function} props.handleChange Handle change fonction
+ * @param {Boolean} props.error Display message if the input is empty or invalid     
+ * @param {Array.<Object>} [props.options] Array of options for dropdowns, each object must contain a "name" property
  * @component 
  */
-export default function FormField(props) {
-  const { label, id, type, value, options, handleChange, error } = props;
+export default function FormField({ label, id, type, value, handleChange, error, options }) {
   return (
     <label className="formField" htmlFor={id}>
       {label}
@@ -38,6 +23,14 @@ export default function FormField(props) {
   )
 }
 
+/**
+ * Generate a select input element
+ * @param {String} id Element id
+ * @param {String} value Input value
+ * @param {Function} handleChange Handle change fonction
+ * @param {Array.<Object>} options Array of options for dropdowns, each object must contain a "name" property
+ * @component 
+ */
 const SelectInput = (id, value, handleChange, options) => {
   return (
     <select className="customInput" name={id} id={id} value={value} onChange={(e) => handleChange(e)}>
@@ -49,7 +42,24 @@ const SelectInput = (id, value, handleChange, options) => {
   )
 }
 
+/**
+ * Generate a field input element
+ * @param {String} type Type of input
+ * @param {String} id Element id
+ * @param {String} value Input value
+ * @param {Function} handleChange Handle change fonction
+ * @component 
+ */
 const FieldInput = (type, id, value, handleChange) => {
   return <input className="customInput" type={type} id={id} value={value} onChange={(e) => handleChange(e)} />;
 }
 
+FormField.propTypes = {
+  label: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  error: PropTypes.bool.isRequired,
+  options: PropTypes.array,
+}

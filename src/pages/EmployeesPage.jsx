@@ -5,7 +5,7 @@ import { EMPLOYEES } from '../data/employees'
 import { HEADERS } from '../data/tableHeaders'
 
 /**
- * React component for the employees page
+ * Component for the employees page
  * @component
  */
 export default function EmployeesPage() {

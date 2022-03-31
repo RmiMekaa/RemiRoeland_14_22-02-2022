@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import ReactModal from 'react-modal'
 
 /**
- * Component for the modal
+ * Wrapper component for the modal
  * @param {Object} props
  * @param {Boolean} props.displayModal Boolean handling the display of the modal
  * @param {function} props.toggleDisplayModal Function to toggle displayModal Boolean
@@ -21,4 +22,9 @@ export function Modal({ displayModal, toggleDisplayModal }) {
       <button onClick={() => toggleDisplayModal(false)}>x</button>
     </ReactModal>
   )
+}
+
+Modal.propTypes = {
+  displayModal: PropTypes.bool.isRequired,
+  toggleDisplayModal: PropTypes.func.isRequired,
 }

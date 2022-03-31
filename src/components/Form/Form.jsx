@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 import FormField from "../FormField/FormField";
 import { STATES } from "../../data/states";
 import { DEPARTMENTS } from "../../data/departments";
@@ -18,10 +19,11 @@ const initialState = {
 
 /**
  * React component for new employee form
+ * @param {Object} props
+ * @param {function} [props.toggleDisplayModal] Function to toggle modal display (triggered on submit)
  * @component
  */
-export default function Form(props) {
-  const { toggleModal } = props;
+export default function Form({ toggleDisplayModal }) {
   const [newEmployee, setNewEmployee] = useState(initialState);
   const [error, setError] = useState(false);
 
@@ -112,7 +114,7 @@ export default function Form(props) {
   )
 
   /**
-   * Update the state with input value on change
+   * Update the corresponding state value on change
    * @param {*} e Event
    * @return {void}
    */
@@ -135,9 +137,13 @@ export default function Form(props) {
     if (!fullyCompleted) setError(true);
     else {
       addEmployee(newEmployee);  //add employee to the database
-      toggleModal(true); //show modal
+      toggleDisplayModal && toggleDisplayModal(true); //show modal
       setNewEmployee(initialState); //reset inputs
     }
     e.preventDefault();
   }
+}
+
+Form.propTypes = {
+  toggleDisplayModal: PropTypes.func,
 }
