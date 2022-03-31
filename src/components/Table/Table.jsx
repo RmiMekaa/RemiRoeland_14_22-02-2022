@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  */
 export default function Table({ data, headers }) {
   return (
-    <ReactTable {...{ data, headers }} />
+    <ReactTable {...{ data, headers }} pageSizeOptions={[10, 25, 50, 75, 100]} />
   )
 }
 
