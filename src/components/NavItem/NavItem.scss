@@ -5,26 +5,31 @@
   align-items: center;
   justify-content: center;
   background: $darkBlueGrey;
+
   &__icon {
     height: 100%;
     width: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
     &__home {
       background-image: url('../../assets/Create-employee-icon-sand.png');
     }
+
     &__employees {
       background-image: url('../../assets/Employees-icon-sand.png');
-    }    
+    }
   }
 }
 
 .navItem.active {
   background: $sand;
+
   & .navItem__icon__home {
     background-image: url('../../assets/Create-employee-icon.png');
   }
+
   & .navItem__icon__employees {
     background-image: url('../../assets/Employees-icon.png');
   }
@@ -33,15 +38,18 @@
 @media screen and (min-width: 768px) {
   .navItem {
     width: 150px;
+
     &__icon {
-    height: 50px;
-    background-size: cover;
+      height: 50px;
+      background-size: cover;
     }
+
     &:first-child {
       border-bottom-left-radius: $largeRadius;
     }
+
     &:last-child {
       border-bottom-right-radius: $largeRadius;
-    }  
+    }
   }
 }
