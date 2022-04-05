@@ -4,13 +4,13 @@
 
 ## Populate data base
 
-This app is delivered without data by default.
-To test the app you can populate the data base by using the following script in your console, it will fetch mock data employees from Mockaroo API and store it in your local storage. Please note that you can choose the amount of data you will get by setting another value to "count" in the URL.
+This app is delivered without data by default.  
+To test it you can either create some new employees using the form in the main page or quickly populate the data base by using the following script in your console, it will fetch mock data employees from Mockaroo API and store it in your local storage. Please note that you can choose the amount of data you will get by setting another value to the "count" parameter in the URL.
 
 ```
 async function getMockData(){
 const response= await fetch("https://api.mockaroo.com/api/44d0a490?count=100&key=850b6540");
-localStorage.setItem("employees-Mock", await response.text());
+localStorage.setItem("employees", await response.text());
 }
 getMockData();
 ```
