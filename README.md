@@ -2,6 +2,8 @@
 **Project Name: HRnet**  
 **Project Title: "Convert an App using JQuery into React"**  
 
+HRnet is an app which allow you to manage your employees, featuring a form to create new employees and an interactive table to display and sort them.
+
 ## Populate data base
 
 This app is delivered without data by default.  
