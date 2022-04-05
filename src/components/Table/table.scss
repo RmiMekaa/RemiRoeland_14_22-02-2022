@@ -27,10 +27,6 @@
     .search input {
       margin-top: 0.5rem;
       font-size: 1rem;
-
-      &::-webkit-search-decoration {
-        display: none;
-      }
     }
   }
 
@@ -139,4 +135,12 @@
       padding: 1rem;
     }
   }
+}
+
+// Clear "x" in search input
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
