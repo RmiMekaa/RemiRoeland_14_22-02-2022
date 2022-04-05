@@ -1,6 +1,6 @@
 # OpenClassrooms - Project 14
 **Project Name: HRnet**  
-**Project Title: "Convert an App using JQuery into React"**    
+**Project Title: "Convert an App using JQuery into React"**  
 
 ## Populate data base
 
@@ -14,6 +14,12 @@ localStorage.setItem("employees", await response.text());
 }
 getMockData();
 ```
+
+## interactive-react-table
+
+This app is using "interative-react-table", a npm package that I created in parallel to that project which handle the creation of the table.  
+Lien [Github](https://github.com/RmiMekaa/React-Table)  
+Lien [npm](https://www.npmjs.com/package/interactive-react-table)  
 
 <br/><br/>
 
