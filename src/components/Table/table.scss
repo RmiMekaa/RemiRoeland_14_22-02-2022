@@ -14,6 +14,10 @@
       background-color: transparent;
       padding: 0.2rem;
       font-size: 1rem;
+
+      &:focus {
+        outline: 2px solid $sand
+      }
     }
 
     option {
@@ -22,6 +26,10 @@
 
     input {
       background-color: transparent;
+
+      &:focus {
+        outline: 2px solid $sand;
+      }
     }
 
     .search input {
@@ -52,14 +60,23 @@
       color: $sand;
       padding: 0.5rem;
 
-      .table-th-sortIcons button {
-        font-size: 0.6rem;
-      }
+      .table-th-sortIcons {
+        margin-left: 0.5rem;
 
-      .table-th-sortIcons button.sortIcon--active {
-        color: $sand;
-        font-size: 0.6rem;
+        button {
+          font-size: 0.6rem;
+
+          &.sortIcon--active {
+            color: $sand;
+            font-size: 0.6rem;
+          }
+        }
+
       }
+    }
+
+    .table-th-9 {
+      max-width: 100px;
     }
 
     .table-td {
