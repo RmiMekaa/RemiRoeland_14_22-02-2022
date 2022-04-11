@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactTable } from "interactive-react-table";
+import { default as ReactTable } from "interactive-react-table";
 import PropTypes from 'prop-types';
 
 /**
@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  */
 export default function Table({ data, headers }) {
   return (
-    <ReactTable {...{ data, headers }} pageSizeOptions={[10, 25, 50, 75, 100]} />
+    <ReactTable {...{ data, headers }} pageSizeOptions={[10, 25, 50, 75]} />
   )
 }
 
