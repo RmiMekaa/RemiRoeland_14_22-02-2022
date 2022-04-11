@@ -9,6 +9,7 @@
   //TABLE HEADER
   .tableHeader {
     padding: 0 0 1rem 0;
+    color: $sand;
 
     select {
       background-color: transparent;
@@ -43,10 +44,17 @@
     color: $sand;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    width: 100%;
+
+    table {
+      border-collapse: initial;
+    }
 
     .table-tr {
+      box-sizing: border-box;
       border-top: 3px solid transparent;
       border-bottom: 3px solid transparent;
+      background-color: transparent;
 
       &:hover .table-td {
         background-color: darken($darkBlueGrey, 5%);
@@ -58,7 +66,11 @@
       background: transparent;
       border-color: transparent;
       color: $sand;
-      padding: 0.5rem;
+      padding: 0;
+
+      .table-th-content {
+        padding: 0 0.5rem 0 0.5rem;
+      }
 
       .table-th-sortIcons {
         margin-left: 0.5rem;
@@ -76,14 +88,15 @@
     }
 
     .table-th-9 {
-      max-width: 100px;
+      width: 110px;
     }
 
     .table-td {
       background-color: $darkBlueGrey;
-      border: 3px solid $lightBlueGrey;
+      border: 2px solid #32303B;
       user-select: text;
       padding: 0.5rem;
+      border-radius: 0.5rem;
     }
   }
 
@@ -93,8 +106,11 @@
     padding: 0;
     gap: 1;
     flex-wrap: wrap;
+    color: $sand;
 
     .pagination {
+      min-width: auto;
+
       button {
         background-color: $darkBlueGrey;
         user-select: none;
@@ -106,6 +122,10 @@
 
         &[disabled] {
           color: $lightBlueGrey;
+
+          &:hover {
+            border: none;
+          }
         }
 
         &:hover {
@@ -145,12 +165,12 @@
     }
 
     .table .table-td {
-      padding: 1rem;
+      padding: 0.8rem;
     }
 
-    .table .table-th {
-      padding: 1rem;
-    }
+    // .table .table-th {
+    //   //padding: 0.8rem 0.8rem 0.5rem 0.8rem;
+    // }
   }
 }
 
