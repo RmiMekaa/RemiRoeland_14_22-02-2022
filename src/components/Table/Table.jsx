@@ -11,7 +11,11 @@ import PropTypes from 'prop-types';
  */
 export default function Table({ data, headers }) {
   return (
-    <ReactTable {...{ data, headers }} pageSizeOptions={[10, 25, 50, 75]} />
+    <ReactTable
+      {...{ data, headers }}
+      pageSizeOptions={[10, 25, 50, 75]}
+      defaultSorting={{ property: "firstName", order: "ascending" }}
+    />
   )
 }
 
