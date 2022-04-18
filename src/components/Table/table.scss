@@ -161,7 +161,11 @@
 
     .tableHeader {
       padding: 0rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .table .table-th {
+      padding-bottom: 0.5rem;
     }
 
     .table .table-td {
