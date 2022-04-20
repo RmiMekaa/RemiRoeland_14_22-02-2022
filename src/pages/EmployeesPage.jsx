@@ -1,6 +1,6 @@
 import React from "react";
-import Table from '../components/Table/Table'
 import { EMPLOYEES } from "../data/employees";
+import { default as ReactTable } from "interactive-react-table";
 
 /**
  * Component for the employees page
@@ -50,7 +50,12 @@ export default function EmployeesPage() {
   return (
     <main className="employeesPage">
       <h1>Current employees</h1>
-      <Table data={EMPLOYEES} headers={HEADERS} />
+      <ReactTable
+        data={EMPLOYEES}
+        headers={HEADERS}
+        pageSizeOptions={[10, 25, 50, 75]}
+        defaultSorting={{ property: "firstName", order: "ascending" }}
+      />
     </main>
   )
 }
