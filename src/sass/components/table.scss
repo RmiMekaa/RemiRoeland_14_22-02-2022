@@ -1,7 +1,7 @@
 .mainContainer {
   font-family: inherit;
   width: 100%;
-  color: $sand;
+  color: $primary;
   margin-bottom: 10rem;
   user-select: none;
   padding: 1rem;
@@ -9,7 +9,7 @@
   //TABLE HEADER
   .tableHeader {
     padding: 0 0 1rem 0;
-    color: $sand;
+    color: $primary;
 
     select {
       background-color: transparent;
@@ -17,19 +17,19 @@
       font-size: 1rem;
 
       &:focus {
-        outline: 2px solid $sand
+        outline: 2px solid $primary
       }
     }
 
     option {
-      background-color: $darkBlueGrey;
+      background-color: $secondaryDark;
     }
 
     input {
       background-color: transparent;
 
       &:focus {
-        outline: 2px solid $sand;
+        outline: 2px solid $primary;
       }
     }
 
@@ -41,7 +41,7 @@
 
   //TABLE
   .table {
-    color: $sand;
+    color: $primary;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 100%;
@@ -57,7 +57,7 @@
       background-color: transparent;
 
       &:hover .table-td {
-        background-color: darken($darkBlueGrey, 5%);
+        background-color: darken($secondaryDark, 5%);
       }
     }
 
@@ -65,7 +65,7 @@
       box-shadow: none;
       background: transparent;
       border-color: transparent;
-      color: $sand;
+      color: $primary;
       padding: 0;
 
       .table-th-content {
@@ -79,7 +79,7 @@
           font-size: 0.6rem;
 
           &.sortIcon--active {
-            color: $sand;
+            color: $primary;
             font-size: 0.6rem;
           }
         }
@@ -92,7 +92,7 @@
     }
 
     .table-td {
-      background-color: $darkBlueGrey;
+      background-color: $secondaryDark;
       border: 2px solid #32303B;
       user-select: text;
       padding: 0.5rem;
@@ -106,22 +106,22 @@
     padding: 0;
     gap: 1;
     flex-wrap: wrap;
-    color: $sand;
+    color: $primary;
 
     .pagination {
       min-width: auto;
 
       button {
-        background-color: $darkBlueGrey;
+        background-color: $secondaryDark;
         user-select: none;
 
         &.currentPage {
-          background-color: $sand;
-          color: $darkBlueGrey;
+          background-color: $primary;
+          color: $secondaryDark;
         }
 
         &[disabled] {
-          color: $lightBlueGrey;
+          color: $secondaryMedium;
 
           &:hover {
             border: none;
@@ -129,7 +129,7 @@
         }
 
         &:hover {
-          border: 3px solid $sand;
+          border: 3px solid $primary;
         }
       }
     }
@@ -141,8 +141,8 @@
 
   //NO DATA MESSAGE
   .noDataMsg {
-    border: 3px solid $lightBlueGrey;
-    background-color: $darkBlueGrey;
+    border: 3px solid $secondaryMedium;
+    background-color: $secondaryDark;
   }
 }
 

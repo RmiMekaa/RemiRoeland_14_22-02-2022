@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $darkBlueGrey;
+  background: $secondaryDark;
 
   &__icon {
     height: 100%;
@@ -24,7 +24,7 @@
 }
 
 .navItem.active {
-  background: $sand;
+  background: $primary;
 
   & .navItem__icon__home {
     background-image: url('../../assets/Create-employee-icon.png');

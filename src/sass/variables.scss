@@ -1,8 +1,8 @@
 //Colors
-$darkBlueGrey : #3f3d4b;
-$mediumBlueGrey : #68677D;
-$lightBlueGrey : #646167;
-$sand: #fcf1d5;
+$primary: #fcf1d5;
+$secondaryDark : #3f3d4b;
+$secondaryMedium : #68677D;
+$backgroundColor : #32303B;
 
 //Radius
 $circleRadius: 10rem;
@@ -11,5 +11,5 @@ $mediumRadius: 1rem;
 $smallRadius: 0.5rem;
 
 //Borders
-$defaultBorder: $sand solid 2px;
-$translucentBorder: rgba($sand, 0.2) solid 3px;
+$defaultBorder: $primary solid 2px;
+$translucentBorder: rgba($primary, 0.2) solid 3px;

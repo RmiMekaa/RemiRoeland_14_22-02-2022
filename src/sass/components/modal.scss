@@ -10,9 +10,9 @@
 
   &__content {
     position: relative;
-    background-color: $darkBlueGrey;
+    background-color: $secondaryDark;
     border-radius: 1.5rem;
-    border: 3px solid $lightBlueGrey;
+    border: 3px solid $secondaryMedium;
     width: fit-content;
     padding: 3rem 4rem;
     outline: none;
@@ -32,7 +32,7 @@
       right: -1.2rem;
       background-color: #32303B;
       border: none;
-      color: $sand;
+      color: $primary;
       cursor: pointer;
     }
   }
