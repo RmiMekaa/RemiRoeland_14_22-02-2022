@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Form from "../components/Form/Form";
-import { Modal } from "../components/Modal/Modal"
+import Form from "../components/Form";
+import Modal from "../components/Modal"
 
 /**
  * Component for the create employee page

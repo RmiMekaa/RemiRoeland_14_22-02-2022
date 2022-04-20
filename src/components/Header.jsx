@@ -1,5 +1,5 @@
 import React from "react";
-import NavItem from "../NavItem/NavItem";
+import NavItem from "../components/NavItem";
 
 /**
  * Component for the header

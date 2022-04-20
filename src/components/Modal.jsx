@@ -9,7 +9,7 @@ import ReactModal from 'react-modal'
  * @param {function} props.toggleDisplayModal Function to toggle displayModal Boolean
  * @component 
  */
-export function Modal({ displayModal, toggleDisplayModal }) {
+export default function Modal({ displayModal, toggleDisplayModal }) {
   return (
     <ReactModal
       isOpen={displayModal}
