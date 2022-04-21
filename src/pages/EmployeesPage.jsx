@@ -1,5 +1,5 @@
 import React from "react";
-import { EMPLOYEES } from "../data/employees";
+import { EMPLOYEES } from "../data/dataManager";
 import { default as ReactTable } from "interactive-react-table";
 
 /**

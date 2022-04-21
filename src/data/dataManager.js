@@ -1,4 +1,5 @@
-import { EMPLOYEES } from "./employees";
+const localStorageData = JSON.parse(localStorage.getItem("employees"))
+export const EMPLOYEES = localStorageData ? localStorageData : [];
 
 /**
  * Add the employee to the database and save it in the local Storage
