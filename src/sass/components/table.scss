@@ -121,7 +121,7 @@
         }
 
         &[disabled] {
-          color: $secondaryMedium;
+          color: $backgroundColor;
 
           &:hover {
             border: none;
@@ -141,7 +141,7 @@
 
   //NO DATA MESSAGE
   .noDataMsg {
-    border: 3px solid $secondaryMedium;
+    border: $translucentBorder;
     background-color: $secondaryDark;
   }
 }
