@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import FormField from "../components/FormField";
-import { STATES, DEPARTMENTS } from "../data/selectOptions";
+import { DEPARTMENTS } from "../data/departmentsOptions";
+import { STATES } from "../data/statesOptions";
 import { addEmployee } from "../data/dataManager";
 
 const initialState = {
