@@ -7,7 +7,6 @@ HRnet is an app which allow you to manage your employees, featuring a form to cr
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)  
-
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=bugs)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
@@ -16,7 +15,7 @@ HRnet is an app which allow you to manage your employees, featuring a form to cr
 
 ## Project objectives
  - Convert an app into React
- - Convert one of the fourth jquery plugins into a react component
+ - Convert one of four jquery plugins into a react component
  - Improve the app performances
  - Create, deploy and install an npm package
 
