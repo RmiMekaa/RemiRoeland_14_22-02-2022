@@ -4,6 +4,15 @@
 
 HRnet is an app which allow you to manage your employees, featuring a form to create new employees and an interactive table to display and sort them.
 
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=bugs)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+
 ## Populate data base
 
 This app is delivered without data by default.  
