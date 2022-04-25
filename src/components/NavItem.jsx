@@ -10,10 +10,9 @@ import PropTypes from 'prop-types';
  * @component
  */
 export default function NavItem({ link, iconClassName }) {
-
   return (
     <NavLink exact="true" to={{ pathname: link }} className="navItem">
-      <div className={"navItem__icon " + (iconClassName && iconClassName)}></div>
+      <div className={"navItem__icon " + iconClassName}></div>
     </NavLink >
   )
 }
