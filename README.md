@@ -6,12 +6,53 @@ HRnet is an app which allow you to manage your employees, featuring a form to cr
 
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)  
+
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=bugs)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_14_22-02-2022&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_14_22-02-2022)
+
+## Project objectives
+ - Convert an app into React
+ - Convert one of the fourth jquery plugins into a react component
+ - Improve the app performances
+ - Create, deploy and install an npm package
+
+The main purpose of this project was to convert this [app](https://github.com/OpenClassrooms-Student-Center/P12_Front-end) which use Jquery plugins into a full React application. 
+
+Plugins used in the original app:
+- [datetimepicker](https://github.com/xdan/datetimepicker) - A date picker used in the create employee form
+- [selectmenu](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js) - A select menu used in the form to select department and state
+- [jquery-modal](https://github.com/kylefox/jquery-modal) - A Modal, displayed when the user submit the employee creation
+- [DataTables](https://github.com/kylefox/jquery-modal) - Generate the interactive table in the current employees page
+
+## My approach
+
+- Create my own component [interactive-react-table](#interactive-react-table) to replace [DataTables](https://github.com/kylefox/jquery-modal).
+- Replace the [jquery-modal](https://github.com/kylefox/jquery-modal) plugin by [react-modal](https://github.com/reactjs/react-modal)
+- Replace the unnecessary plugins [datetimepicker](https://github.com/xdan/datetimepicker) and [selectmenu](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js) by basic HTML elements `<select>` and `<input type="date">`. It helps me to avoid increasing the application burden and improve the app performances
+- Use component-oriented programming to improve maintenance
+- Create a navigation header to improve ergonomy
+- Add style to the application
+- Add responsive design
+
+## Performances 
+
+|   | JQuery App | React App |
+| ------------- | ------------- | ------------- |
+| Score  | 100 | 100 |
+| First Contentful Paint  | 0.6 s | 0.2 s  |
+| Time to Interactive  | 0.6 s  | 0.2 s  |
+| Speed Index  | 0.6 s  | 0.2 s  |
+| Largest Contentful Paint  | 0.6 s  | 0.6 s  |
+| Total Blocking Time  | 0 ms  | 0 ms  |
+
+## interactive-react-table
+
+This app is using "interative-react-table", a npm package that I created in parallel to that project which handle the creation of the table.    
+Find out more: [Github](https://github.com/RmiMekaa/React-Table) | [npm](https://www.npmjs.com/package/interactive-react-table)  
 
 ## Populate data base
 
@@ -26,18 +67,8 @@ localStorage.setItem("employees", await response.text());
 getMockData();
 ```
 
-## interactive-react-table
-
-This app is using "interative-react-table", a npm package that I created in parallel to that project which handle the creation of the table.    
-Lien [Github](https://github.com/RmiMekaa/React-Table)  
-Lien [npm](https://www.npmjs.com/package/interactive-react-table)  
-
-<br/><br/>
+Hope it helps !
 
 <p float="left">
-  <img alt="Git" title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32px"/>
-  <img alt="HTML5" title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="32px"/>
-  <img alt="CSS3" title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32px"/>
-  <img alt="Sass" title="Sass" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="32px"/>
   <img alt="React" title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="32px"/>
 </p>
