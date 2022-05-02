@@ -65,6 +65,11 @@ localStorage.setItem("employees", await response.text());
 }
 getMockData();
 ```
+## Documentation
+
+[HRnet](https://rmimekaa.github.io/RemiRoeland_14_22-02-2022/) - made with [JSDoc](https://jsdoc.app/index.html).
+
+------------------
 
 Hope it helps !
 
