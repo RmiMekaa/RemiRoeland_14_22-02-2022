@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
  * @property {String} [props.iconClassName]  className used to set icon as background image in css rules
  * @returns {React.ReactElement} 
  */
-export default function NavItem({ link, iconClassName }) {
+export function NavItem({ link, iconClassName }) {
   return (
     <NavLink exact="true" to={{ pathname: link }} className="navItem">
       <div className={"navItem__icon " + iconClassName}></div>

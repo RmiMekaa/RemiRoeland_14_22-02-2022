@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
-import FormField from "../components/FormField";
+import { FormField } from "../components/FormField";
 import { DEPARTMENTS } from "../data/departmentsOptions";
 import { STATES } from "../data/statesOptions";
 import { addEmployee } from "../data/dataManager";
@@ -23,7 +23,7 @@ const initialState = {
  * @param {function} [props.toggleDisplayModal] Function to toggle modal display (triggered on submit)
  * @returns {React.ReactElement} 
  */
-export default function Form({ toggleDisplayModal }) {
+export function Form({ toggleDisplayModal }) {
   const [newEmployee, setNewEmployee] = useState(initialState);
   const [error, setError] = useState(false);
 

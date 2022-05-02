@@ -6,7 +6,7 @@ import { default as ReactTable } from "interactive-react-table";
  * Employees page component
  * @returns {React.ReactElement} 
  */
-export default function EmployeesPage() {
+export function EmployeesPage() {
 
   const HEADERS = [
     {

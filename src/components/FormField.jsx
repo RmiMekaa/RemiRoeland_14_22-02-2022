@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 /**
  * React component for form fields with label + input
+ * @components
  * @param {Object} props 
  * @param {String} props.label Label to display
  * @param {String} props.id Element id
@@ -13,7 +14,7 @@ import PropTypes from 'prop-types';
  * @param {Array.<Object>} [props.options] Array of options for dropdowns, each object must contain a "name" property
  * @returns {React.ReactElement} 
  */
-export default function FormField({ label, id, type, value, handleChange, error, options }) {
+export function FormField({ label, id, type, value, handleChange, error, options }) {
   return (
     <label className="formField" htmlFor={id}>
       {label}

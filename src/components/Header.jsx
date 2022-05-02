@@ -1,11 +1,11 @@
 import React from "react";
-import NavItem from "../components/NavItem";
+import { NavItem } from "../components/NavItem";
 
 /**
  * Header Component
  * @returns {React.ReactElement} 
  */
-export default function Header() {
+export function Header() {
 
   return (
     <header>
