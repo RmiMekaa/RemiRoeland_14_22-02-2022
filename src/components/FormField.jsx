@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  * @param {Function} props.handleChange Handle change fonction
  * @param {Boolean} props.error Display message if the input is empty or invalid     
  * @param {Array.<Object>} [props.options] Array of options for dropdowns, each object must contain a "name" property
- * @component 
+ * @returns {React.ReactElement} 
  */
 export default function FormField({ label, id, type, value, handleChange, error, options }) {
   return (

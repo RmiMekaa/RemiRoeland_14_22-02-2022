@@ -7,7 +7,7 @@ import ReactModal from 'react-modal'
  * @param {Object} props
  * @param {Boolean} props.displayModal Boolean handling the display of the modal
  * @param {function} props.toggleDisplayModal Function to toggle displayModal Boolean
- * @component 
+ * @returns {React.ReactElement} 
  */
 export default function Modal({ displayModal, toggleDisplayModal }) {
   return (

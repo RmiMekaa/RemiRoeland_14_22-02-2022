@@ -18,10 +18,10 @@ const initialState = {
 }
 
 /**
- * React component for new employee form
+ * New employee form component
  * @param {Object} props
  * @param {function} [props.toggleDisplayModal] Function to toggle modal display (triggered on submit)
- * @component
+ * @returns {React.ReactElement} 
  */
 export default function Form({ toggleDisplayModal }) {
   const [newEmployee, setNewEmployee] = useState(initialState);

@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 /**
- * React component for nav item
+ * Nav item component
  * @param {Object} props
  * @property {String} props.link  Redirection path
  * @property {String} [props.iconClassName]  className used to set icon as background image in css rules
- * @component
+ * @returns {React.ReactElement} 
  */
 export default function NavItem({ link, iconClassName }) {
   return (

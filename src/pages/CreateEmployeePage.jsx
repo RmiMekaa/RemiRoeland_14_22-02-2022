@@ -3,8 +3,8 @@ import Form from "../components/Form";
 import Modal from "../components/Modal"
 
 /**
- * Component for the create employee page
- * @component
+ * Create employee page component
+ * @returns {React.ReactElement} 
  */
 export default function CreateEmployeePage() {
   const [displayModal, toggleDisplayModal] = useState(false);
