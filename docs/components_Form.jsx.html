@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/Form.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/Form.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState } from "react";
+import PropTypes from 'prop-types';
+import { FormField } from "../components/FormField";
+import { DEPARTMENTS } from "../data/departmentsOptions";
+import { STATES } from "../data/statesOptions";
+import { addEmployee } from "../data/dataManager";
+
+const initialState = {
+  firstName: '',
+  lastName: '',
+  birthdate: '',
+  startDate: '',
+  department: '',
+  street: '',
+  city: '',
+  state: '',
+  zipCode: '',
+}
+
+/**
+ * New employee form component
+ * @param {Object} props
+ * @param {function} [props.toggleDisplayModal] Function to toggle modal display (triggered on submit)
+ * @returns {React.ReactElement} 
+ */
+export function Form({ toggleDisplayModal }) {
+  const [newEmployee, setNewEmployee] = useState(initialState);
+  const [error, setError] = useState(false);
+
+  return (
+    &lt;form className="form" onSubmit={handleSubmit}>
+      &lt;FormField
+        label="First Name"
+        id="firstName"
+        type="text"
+        value={newEmployee.firstName}
+        handleChange={handleChange}
+        error={error}
+      />
+      &lt;FormField
+        label="Last Name"
+        id="lastName"
+        type="text"
+        value={newEmployee.lastName}
+        handleChange={handleChange}
+        error={error}
+      />
+      &lt;FormField
+        label="Date of Birth"
+        id="birthdate"
+        type="date"
+        value={newEmployee.birthdate}
+        handleChange={handleChange}
+        error={error}
+      />
+      &lt;FormField
+        label="Start Date"
+        id="startDate"
+        type="date"
+        value={newEmployee.startDate}
+        handleChange={handleChange}
+        error={error}
+      />
+      &lt;fieldset className="address">
+        &lt;legend>Address&lt;/legend>
+        &lt;FormField
+          label="Street"
+          id="street"
+          type="text"
+          value={newEmployee.street}
+          handleChange={handleChange}
+          error={error}
+        />
+        &lt;FormField
+          label="City"
+          id="city"
+          type="text"
+          value={newEmployee.city}
+          handleChange={handleChange}
+          error={error}
+        />
+        &lt;FormField
+          label="State"
+          id="state"
+          type="select"
+          options={STATES}
+          value={newEmployee.state}
+          handleChange={handleChange}
+          error={error}
+        />
+        &lt;FormField
+          label="Zip Code"
+          id="zipCode"
+          type="number"
+          value={newEmployee.zipCode}
+          handleChange={handleChange}
+          error={error}
+        />
+      &lt;/fieldset>
+      &lt;FormField
+        label="Department"
+        id="department"
+        type="select"
+        options={DEPARTMENTS}
+        value={newEmployee.department}
+        handleChange={handleChange}
+        error={error}
+      />
+      &lt;div className="form__submit">
+        {error ? &lt;span className="form__submit__errorMsg">Veuillez remplir l'intégralité des champs&lt;/span> : null}
+        &lt;input className="customButton form__submit__button" type="submit" value="Create" />
+      &lt;/div>
+    &lt;/form>
+  )
+
+  /**
+   * Update the corresponding state value on change
+   * @param {*} e Event
+   * @return {void}
+   */
+  function handleChange(e) {
+    const { id, value } = e.target;
+    setNewEmployee((prevState) => ({
+      ...prevState,
+      [id]: value,
+    }))
+  }
+
+  /**
+   * Handle form submission
+   * @param {*} e Event
+   * @return {void}
+   */
+  function handleSubmit(e) {
+    setError(false)
+    const fullyCompleted = Object.values(newEmployee).every((v) => v !== ''); //Checks if all the fields are completed
+    if (!fullyCompleted) setError(true);
+    else {
+      addEmployee(newEmployee);  //add employee to the database
+      toggleDisplayModal &amp;&amp; toggleDisplayModal(true); //show modal
+      setNewEmployee(initialState); //reset inputs
+    }
+    e.preventDefault();
+  }
+}
+
+Form.propTypes = {
+  toggleDisplayModal: PropTypes.func,
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addEmployee">addEmployee</a></li><li><a href="global.html#CreateEmployeePage">CreateEmployeePage</a></li><li><a href="global.html#EmployeesPage">EmployeesPage</a></li><li><a href="global.html#FieldInput">FieldInput</a></li><li><a href="global.html#Form">Form</a></li><li><a href="global.html#FormField">FormField</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#Modal">Modal</a></li><li><a href="global.html#NavItem">NavItem</a></li><li><a href="global.html#SelectInput">SelectInput</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon May 02 2022 19:00:28 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
