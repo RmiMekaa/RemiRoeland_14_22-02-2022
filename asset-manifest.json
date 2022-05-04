@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RemiRoeland_14_22-02-2022/static/css/main.6bfe9eba.css",
+    "main.js": "/RemiRoeland_14_22-02-2022/static/js/main.32eeb71a.js",
+    "static/media/background.png": "/RemiRoeland_14_22-02-2022/static/media/background.298af3564b9dd25c10a0.png",
+    "static/media/Create-employee-icon.png": "/RemiRoeland_14_22-02-2022/static/media/Create-employee-icon.7513930744ee6dbb1c2f.png",
+    "static/media/Employees-icon.png": "/RemiRoeland_14_22-02-2022/static/media/Employees-icon.62d0fcd49a58e26c1bd4.png",
+    "static/media/Create-employee-icon-sand.png": "/RemiRoeland_14_22-02-2022/static/media/Create-employee-icon-sand.d62bff07e540c6df7f7e.png",
+    "static/media/Employees-icon-sand.png": "/RemiRoeland_14_22-02-2022/static/media/Employees-icon-sand.f700a7806ce96aa1312b.png",
+    "index.html": "/RemiRoeland_14_22-02-2022/index.html",
+    "main.6bfe9eba.css.map": "/RemiRoeland_14_22-02-2022/static/css/main.6bfe9eba.css.map",
+    "main.32eeb71a.js.map": "/RemiRoeland_14_22-02-2022/static/js/main.32eeb71a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bfe9eba.css",
+    "static/js/main.32eeb71a.js"
+  ]
+}
