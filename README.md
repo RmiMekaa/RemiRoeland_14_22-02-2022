@@ -1,7 +1,7 @@
 # OpenClassrooms - Project 14
 **Project Name: HRnet**  
 **Project Title: "Convert an App using JQuery into React"**  
-**Test it ! : [HRnet]('https://rmimekaa.github.io/RemiRoeland_14_22-02-2022/#/Employees'). Please take a look at [this section](#populate-data-base) before**
+**Test it ! :** [HRnet]('https://rmimekaa.github.io/RemiRoeland_14_22-02-2022/#/Employees'). **Please take a look at [this section](#populate-data-base) before**
 
 HRnet is an app which allow you to manage your employees, featuring a form to create new employees and an interactive table to display and sort them.
 
