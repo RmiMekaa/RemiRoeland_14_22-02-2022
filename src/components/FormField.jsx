@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  * @param {String} props.value Input value
  * @param {Function} props.handleChange Handle change fonction
  * @param {Boolean} props.error Display message if the input is empty or invalid     
- * @param {Array.<Object>} [props.options] Array of options for dropdowns, each object must contain a "name" property
+ * @param {Array} [props.options] Array of options for select menu
  * @returns {React.ReactElement} 
  */
 export function FormField({ label, id, type, value, handleChange, error, options }) {
@@ -29,7 +29,7 @@ export function FormField({ label, id, type, value, handleChange, error, options
  * @param {String} id Element id
  * @param {String} value Input value
  * @param {Function} handleChange Handle change fonction
- * @param {Array.<Object>} options Array of options for dropdowns, each object must contain a "name" property
+ * @param {Array} options Array of options for select menu
  * @component 
  */
 const SelectInput = (id, value, handleChange, options) => {
@@ -37,7 +37,7 @@ const SelectInput = (id, value, handleChange, options) => {
     <select className="customInput" name={id} id={id} value={value} onChange={(e) => handleChange(e)}>
       <option style={{ display: "none" }} >Select {id}...</option>
       {options.map(option => {
-        return <option key={id + option.name}>{option.name}</option>
+        return <option key={id + option}>{option}</option>
       })}
     </select>
   )

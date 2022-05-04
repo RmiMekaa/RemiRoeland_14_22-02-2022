@@ -1,179 +1,61 @@
 export const STATES = [
-  {
-    "name": "Alabama",
-  },
-  {
-    "name": "Alaska",
-  },
-  {
-    "name": "American Samoa",
-  },
-  {
-    "name": "Arizona",
-  },
-  {
-    "name": "Arkansas",
-  },
-  {
-    "name": "California",
-  },
-  {
-    "name": "Colorado",
-  },
-  {
-    "name": "Connecticut",
-  },
-  {
-    "name": "Delaware",
-  },
-  {
-    "name": "District Of Columbia",
-  },
-  {
-    "name": "Federated States Of Micronesia",
-  },
-  {
-    "name": "Florida",
-  },
-  {
-    "name": "Georgia",
-  },
-  {
-    "name": "Guam",
-  },
-  {
-    "name": "Hawaii",
-  },
-  {
-    "name": "Idaho",
-  },
-  {
-    "name": "Illinois",
-  },
-  {
-    "name": "Indiana",
-  },
-  {
-    "name": "Iowa",
-  },
-  {
-    "name": "Kansas",
-  },
-  {
-    "name": "Kentucky",
-  },
-  {
-    "name": "Louisiana",
-  },
-  {
-    "name": "Maine",
-  },
-  {
-    "name": "Marshall Islands",
-  },
-  {
-    "name": "Maryland",
-  },
-  {
-    "name": "Massachusetts",
-  },
-  {
-    "name": "Michigan",
-  },
-  {
-    "name": "Minnesota",
-  },
-  {
-    "name": "Mississippi",
-  },
-  {
-    "name": "Missouri",
-  },
-  {
-    "name": "Montana",
-  },
-  {
-    "name": "Nebraska",
-  },
-  {
-    "name": "Nevada",
-  },
-  {
-    "name": "New Hampshire",
-  },
-  {
-    "name": "New Jersey",
-  },
-  {
-    "name": "New Mexico",
-  },
-  {
-    "name": "New York",
-  },
-  {
-    "name": "North Carolina",
-  },
-  {
-    "name": "North Dakota",
-  },
-  {
-    "name": "Northern Mariana Islands",
-  },
-  {
-    "name": "Ohio",
-  },
-  {
-    "name": "Oklahoma",
-  },
-  {
-    "name": "Oregon",
-  },
-  {
-    "name": "Palau",
-  },
-  {
-    "name": "Pennsylvania",
-  },
-  {
-    "name": "Puerto Rico",
-  },
-  {
-    "name": "Rhode Island",
-  },
-  {
-    "name": "South Carolina",
-  },
-  {
-    "name": "South Dakota",
-  },
-  {
-    "name": "Tennessee",
-  },
-  {
-    "name": "Texas",
-  },
-  {
-    "name": "Utah",
-  },
-  {
-    "name": "Vermont",
-  },
-  {
-    "name": "Virgin Islands",
-  },
-  {
-    "name": "Virginia",
-  },
-  {
-    "name": "Washington",
-  },
-  {
-    "name": "West Virginia",
-  },
-  {
-    "name": "Wisconsin",
-  },
-  {
-    "name": "Wyoming",
-  }
+  'Alabama',
+  'Alaska',
+  'American Samoa',
+  'Arizona',
+  'Arkansas',
+  'California',
+  'Colorado',
+  'Connecticut',
+  'Delaware',
+  'District of Columbia',
+  'Federated States of Micronesia',
+  'Florida',
+  'Georgia',
+  'Guam',
+  'Hawaii',
+  'Idaho',
+  'Illinois',
+  'Indiana',
+  'Iowa',
+  'Kansas',
+  'Kentucky',
+  'Louisiana',
+  'Maine',
+  'Marshall Islands',
+  'Maryland',
+  'Massachusetts',
+  'Michigan',
+  'Minnesota',
+  'Mississippi',
+  'Missouri',
+  'Montana',
+  'Nebraska',
+  'Nevada',
+  'New Hampshire',
+  'New Jersey',
+  'New Mexico',
+  'New York',
+  'North Carolina',
+  'North Dakota',
+  'Northern Mariana Islands',
+  'Ohio',
+  'Oklahoma',
+  'Oregon',
+  'Palau',
+  'Pennsylvania',
+  'Puerto Rico',
+  'Rhode Island',
+  'South Carolina',
+  'South Dakota',
+  'Tennessee',
+  'Texas',
+  'Utah',
+  'Vermont',
+  'Virgin Island',
+  'Virginia',
+  'Washington',
+  'West Virginia',
+  'Wisconsin',
+  'Wyoming'
 ]
