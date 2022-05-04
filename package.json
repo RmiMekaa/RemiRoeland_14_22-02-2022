@@ -2,6 +2,7 @@
   "name": "hrnet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rmimekaa.github.io/RemiRoeland_14_22-02-2022/",
   "dependencies": {
     "interactive-react-table": "^1.1.0",
     "react": "^17.0.2",
@@ -16,7 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "jsdoc": "npx jsdoc -c ./jsdocConfig.json"
+    "jsdoc": "npx jsdoc -c ./jsdocConfig.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
